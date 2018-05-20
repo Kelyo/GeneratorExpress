@@ -7,9 +7,6 @@
 	<title>Generator-Express MVC</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 
-</head>
-
-<body>
 <style type="text/css">
 
 button {
@@ -37,23 +34,60 @@ button {
     display: table;
 }
 
-.topnav-right {
-  float: left;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: orange;
 }
 
-</style>
-<nav class="navbar navbar-expand-sm bg-warning navbar-dark">
-	  <a class="navbar-brand" href="#">Logo</a>
-<div class="topnav">
-  
-  <div class="topnav-right">
+li {
+    float: left;
+}
 
-    <a href="#search">Books</a>
-    <a href="#about">Add Pictures</a>
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: orange;
+}
+</style>
+</head>
+
+<body>
+
+
+
+<ul>
+  <li><a href="#logo">Logo</a></li>
+  
+  <li style="float:right"><a class="active" href="#about">About</a></li>
+</ul>
+<!--
+ <nav class="navbar navbar-expand-sm bg-warning navbar-dark ">
+	  <a class="navbar-brand" href="#">Logo</a>
+  
+  
+<div class="topnav-right">
+
+    <a class="navbar-brand" href="#">Books</a>
+    <a class="navbar-brand" href="#">Add Pictures</a>
+
   </div>
 </div>
-</nav>
-<!-- 
+</nav> 
+
+ 
 <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
     
     <a class="navbar-brand" href="#">Logo</a>
@@ -77,8 +111,8 @@ button {
 <br><h1 style="text-align:center"> Generator-Express MVC</h1></br>
 <h4 style="text-align:center">Welcome to Generator-Express MVC </h4>
 
-<br><br><br><br><br><br><h6 style="text-align:center"><button type="button"><font size="1"> CREATE YOUR PHOTO BOOK  </font></button></h6></br>
-
+<h6 style="text-align:center"><button type="button"><font size="1"> CREATE YOUR PHOTO BOOK  </font></button></h6>
+<br></br>
 <div class="row">
   <div class="column">
 <h4>Animals</h4>
